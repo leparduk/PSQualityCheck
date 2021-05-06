@@ -7,6 +7,11 @@ if (-not ($NuGetPath = (Get-Command 'nuget.exe' -ErrorAction SilentlyContinue).P
 
     Write-Output "nuget.exe not found, downloading into project bin path"
     $NuGetPath = Resolve-Path -Path ".\bin"
+
+    if (-not (Test-Path -Path $NuGetPath -ErrorAction SilentlyContinue)) {
+        New-Item -Path $NuGetPath -ItemType "directory" -Force
+    }
+
     $NuGetFile = Join-Path -Path $NuGetPath -ChildPath "nuget.exe"
     Invoke-WebRequest -Uri 'https://dist.nuget.org/win-x86-commandline/latest/nuget.exe' -OutFile $NuGetFile
 
