@@ -2,7 +2,7 @@
 
 ## Summary
 
-### **COMING SOON!** PSQualityCheck v2.0.0 and its new companion module PSQualityTempate v0.9
+### **NEW** PSQualityCheck v2.0.0 and **COMING SOON!** its companion module PSQualityTempate
 
 This is a PowerShell module which runs a series of Pester 5 tests to validate code quality. It uses a combination of Pester tests, PSScriptAnalyzer and a set of quality standards to ensure consistent quality on PowerShell scripts and modules.
 
@@ -12,18 +12,13 @@ For more information please see the wiki here [Wiki](https://github.com/andrewrd
 
 ### PowerShell Gallery
 
-[![psgallery version](https://img.shields.io/powershellgallery/v/psqualitycheck)](https://www.powershellgallery.com/packages/PSQualityCheck/1.3.0) [![downloads](https://img.shields.io/powershellgallery/dt/PSQualityCheck)](https://www.powershellgallery.com/packages/PSQualityCheck/1.3.0)
+[![psgallery version](https://img.shields.io/powershellgallery/v/psqualitycheck)](https://www.powershellgallery.com/packages/PSQualityCheck/2.0.0) [![downloads](https://img.shields.io/powershellgallery/dt/PSQualityCheck)](https://www.powershellgallery.com/packages/PSQualityCheck/2.0.0)
 
 ### GitHub
 
 #### Release Version
 
 [![github tag](https://img.shields.io/github/v/tag/andrewrdavidson/psqualitycheck?sort=semver)](https://github.com/andrewrdavidson/PSQualityCheck/releases?sort=semver) [![release date](https://img.shields.io/github/release-date/andrewrdavidson/psqualitycheck)](https://github.com/andrewrdavidson/PSQualityCheck/releases)
-
-#### Development
-
-[![devtag](https://img.shields.io/badge/branch-1.4.0-blue)](https://github.com/andrewrdavidson/PSQualityCheck/tree/release-1.4.0)
-[![commits since 1.3.0](https://img.shields.io/github/commits-since/andrewrdavidson/psqualitycheck/1.3.0/main?include_prereleases)](https://github.com/andrewrdavidson/PSQualityCheck/releases/1.3.0)
 
 ## Plans
 
@@ -40,6 +35,10 @@ This module requires:
 * PowerShell 5.1 or PowerShell 7.1 or later
 * Pester 5.1 or later
 * PSScriptAnalyzer 1.19.1 or later
+* ModuleBuilder 2.0.0 or  later (to build)
+* PowerShellGet 2.2.5 or later (to build)
+* InvokeBuild 5.8.0 pr later (to build)
+* Cofl.Util 1.2.2 or later (to build)
 
 Optional items:
 
